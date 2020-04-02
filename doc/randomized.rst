@@ -42,7 +42,7 @@ where
     place the point in a randomized location within its interval
   - "centermaximin" or "cm": same as "maximin", but centered within the
     intervals
-  - "correlation" or "corr": minimize the maximum correlation coefficient
+  - "correlate" or "corr": minimize the maximum correlation coefficient
   
 The output design scales all the variable ranges from zero to one which
 can then be transformed as the user wishes (like to a specific statistical
