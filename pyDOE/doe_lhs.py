@@ -33,7 +33,7 @@ def lhs(n, samples=None, criterion=None, iterations=None):
         The number of samples to generate for each factor (Default: n)
     criterion : str
         Allowable values are "center" or "c", "maximin" or "m", 
-        "centermaximin" or "cm", and "correlation" or "corr". If no value 
+        "centermaximin" or "cm", and "correlate" or "corr". If no value 
         given, the design is simply randomized.
     iterations : int
         The number of iterations in the maximin and correlations algorithms
@@ -95,7 +95,7 @@ def lhs(n, samples=None, criterion=None, iterations=None):
     
     if criterion is not None:
         assert criterion.lower() in ('center', 'c', 'maximin', 'm', 
-            'centermaximin', 'cm', 'correlation', 
+            'centermaximin', 'cm', 'correlate', 
             'corr'), 'Invalid value for "criterion": {}'.format(criterion)
     else:
         H = _lhsclassic(n, samples)
